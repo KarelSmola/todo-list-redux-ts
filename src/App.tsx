@@ -1,7 +1,12 @@
 import React from "react";
+import LoginForm from "./components/LoginForm";
 
 const App = () => {
-  return <div>Todo list</div>;
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
 };
 
 export default App;
