@@ -4,7 +4,7 @@ import { logUser } from "../../store/login/loginSlice";
 
 import styles from "./LoginForm.module.css";
 
-const LoginForm = () => {
+export const LoginForm = () => {
   const [inputValues, setInputValues] = useState({
     userName: "",
     userPass: "",
@@ -54,5 +54,3 @@ const LoginForm = () => {
     </form>
   );
 };
-
-export default LoginForm;
