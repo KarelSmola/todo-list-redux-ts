@@ -14,7 +14,6 @@ export const todoSlice = createSlice({
       state,
       action: PayloadAction<{ id: string; todo: string; date: string }>
     ) {
-      console.log(action.payload);
       state.todos = [...state.todos, action.payload];
     },
   },
