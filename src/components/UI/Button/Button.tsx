@@ -1,16 +1,21 @@
-import React, { ReactEventHandler, ReactNode } from "react";
+import React from "react";
 
 import styles from "./Button.module.css";
 
 type ButtonProps = {
-  className: string;
-  children: ReactNode;
-  type: "button" | "submit";
+  className?: string;
+  children: React.ReactNode;
+  type?: "button" | "submit";
+  onClick?: () => void;
 };
 
-export const Button = ({ className, type, children }: ButtonProps) => {
+export const Button = ({ className, type, onClick, children }: ButtonProps) => {
   return (
-    <button type={type} className={`${styles.button} ${className}`}>
+    <button
+      className={`${styles.button} ${className}`}
+      type={type}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

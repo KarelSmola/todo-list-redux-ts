@@ -9,9 +9,9 @@ export const TodoList = () => {
   const todos = useSelector(selectedTodos);
 
   return (
-    <ul>
+    <ul className={styles["todo-list"]}>
       {todos.map((todo) => (
-        <Todo key={todo.id} todo={todo.todo} date={todo.date} />
+        <Todo key={todo.id} id={todo.id} todo={todo.todo} date={todo.date} />
       ))}
     </ul>
   );

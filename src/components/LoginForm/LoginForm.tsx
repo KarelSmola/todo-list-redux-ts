@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { logUser } from "../../store/login/loginSlice";
 
 import { Button } from "../UI/Button/Button";
+import { Input } from "../UI/Input/Input";
+import { LoginIcon } from "../UI/Icons";
 import styles from "./LoginForm.module.css";
 
 export const LoginForm = () => {
@@ -39,15 +41,11 @@ export const LoginForm = () => {
 
   const nameValueIsValid = userName.length > 3;
   const invalidName = !nameValueIsValid && inputBlur.userName;
-  const nameClasses = invalidName
-    ? `${styles.input} ${styles.invalid}`
-    : `${styles.input}`;
+  const nameClasses = invalidName ? styles.invalid : "";
 
   const passValueIsValid = userPass.length > 4;
   const invalidPass = !passValueIsValid && inputBlur.userPass;
-  const passClasses = invalidPass
-    ? `${styles.input} ${styles.invalid}`
-    : `${styles.input}`;
+  const passClasses = invalidPass ? styles.invalid : "";
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -69,10 +67,10 @@ export const LoginForm = () => {
         <label className={styles.label} htmlFor="userName">
           User Name
         </label>
-        <input
+        <Input
           className={nameClasses}
           type="text"
-          placeholder="At least 4 charecters"
+          placeholder="Write at least 4 charecters"
           id="userName"
           name="userName"
           onBlur={loginBlurHandler}
@@ -84,10 +82,10 @@ export const LoginForm = () => {
         <label className={styles.label} htmlFor="userPass">
           Password
         </label>
-        <input
+        <Input
           className={passClasses}
           type="password"
-          placeholder="At least 5 charecters"
+          placeholder="Write at least 5 charecters"
           id="userPass"
           name="userPass"
           onBlur={loginBlurHandler}
@@ -96,7 +94,8 @@ export const LoginForm = () => {
         />
       </div>
       <Button className={styles["login-btn"]} type="submit">
-        Login
+        <span>Login</span>
+        <LoginIcon />
       </Button>
     </form>
   );

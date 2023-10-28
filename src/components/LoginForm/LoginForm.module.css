@@ -18,19 +18,9 @@
   font-weight: 700;
 }
 
-.input {
-  border: 1px solid black;
-  padding: 0.5rem;
-  font-size: 1.8rem;
-}
-
 .invalid {
   background-color: pink;
-}
-
-.input:focus {
-  outline: none;
-  border: 1px solid blue;
+  border: 1px solid red;
 }
 
 .login-btn {

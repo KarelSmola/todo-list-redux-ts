@@ -3,6 +3,7 @@
   transition: all 0.2s ease-out;
   font-weight: 500;
   font-size: 1.8rem;
+  border: none;
 }
 
 .button:hover {

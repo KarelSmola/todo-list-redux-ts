@@ -1,0 +1,36 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid blue;
+  font-weight: 700;
+}
+
+.todo-title {
+  margin-right: auto;
+  font-size: 2rem;
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+  margin-right: 2rem;
+}
+
+.remove-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.edit-btn {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+
+.edit-btn:hover {
+  background-color: blue;
+  color: #fff;
+}
