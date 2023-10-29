@@ -1,0 +1,48 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: var(--border-primary);
+  font-weight: 700;
+}
+
+.todo-title {
+  margin-right: auto;
+  font-size: 2rem;
+}
+
+.remove-btn {
+  background-color: var(--color-brightest);
+  color: var(--color-primary-attention);
+  border: var(--border-primary-attention);
+  margin-right: 2rem;
+}
+
+.remove-btn:hover {
+  background-color: var(--color-primary-attention);
+  color: var(--color-brightest);
+}
+
+.remove-btn:focus {
+  outline: none;
+  background-color: var(--color-primary-attention);
+  color: var(--color-brightest);
+}
+
+.edit-btn {
+  background-color: var(--color-brightest);
+  color: var(--color-primary);
+  border: var(--border-primary);
+}
+
+.edit-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-brightest);
+}
+
+.edit-btn:focus {
+  outline: none;
+  background-color: var(--color-primary);
+  color: var(--color-brightest);
+}

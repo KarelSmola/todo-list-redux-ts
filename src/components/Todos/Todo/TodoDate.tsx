@@ -1,5 +1,5 @@
 import React from "react";
-import { DateType } from "../../types/type";
+import { DateType } from "../../../types/type";
 
 import styles from "./TodoDate.module.css";
 

@@ -1,6 +1,6 @@
 .button {
   padding: 1rem 2rem;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s;
   font-weight: 500;
   font-size: 1.8rem;
   border: none;
@@ -8,9 +8,9 @@
 
 .button:hover {
   cursor: pointer;
-  transform: translateY(-0.2rem);
+  transform: scale(1.08);
 }
 
 .button:active {
-  transform: translateY(0.1rem);
+  transform: scale(0.95);
 }

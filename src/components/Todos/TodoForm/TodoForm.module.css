@@ -1,0 +1,51 @@
+.todo-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  border: 2px solid var(--color-primary);
+}
+
+.add-todo-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.todo-label-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.invalid {
+  background-color: var(--color-invalid-input);
+  border: var(--border-primary-attention);
+}
+
+.add-todo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 100;
+  background-color: var(--color-brightest);
+  color: var(--color-primary);
+  border: var(--border-primary);
+}
+
+.add-todo-btn:focus {
+  outline: none;
+  background-color: var(--color-primary);
+  color: var(--color-brightest);
+}
+
+.add-todo-icon {
+  height: 2rem;
+  width: 2rem;
+  stroke-width: 1rem;
+}

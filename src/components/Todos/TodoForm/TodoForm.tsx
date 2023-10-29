@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addNewTodo } from "../../store/todo/todoSlice";
+import { addNewTodo } from "../../../store/todo/todoSlice";
 
 import styles from "./TodoForm.module.css";
-import { Input } from "../UI/Input/Input";
-import { Button } from "../UI/Button/Button";
-import { PlusIcon } from "../UI/Icons";
+import { Input } from "../../UI/Input/Input";
+import { Button } from "../../UI/Button/Button";
+import { PlusIcon } from "../../UI/Icons";
 
 type NewTodoObj = {
   date: { day: number; month: string; year: number };
@@ -57,21 +57,24 @@ export const TodoForm = () => {
 
   return (
     <form className={styles["todo-form"]} onSubmit={submitHandler}>
-      <div className={styles["todo-label-box"]}>
-        <label htmlFor="todo">Todo</label>
-        <Input
-          className={todoClasses}
-          type="text"
-          placeholder="Write todo"
-          name="todo"
-          onBlur={todoBlurHandler}
-          onChange={todoChangeHandler}
-          value={newTodo}
-        />
+      <h2>Add new todo form</h2>
+      <div className={styles["add-todo-box"]}>
+        <div className={styles["todo-label-box"]}>
+          <label htmlFor="todo">New todo</label>
+          <Input
+            className={todoClasses}
+            type="text"
+            placeholder="Write todo"
+            name="todo"
+            onBlur={todoBlurHandler}
+            onChange={todoChangeHandler}
+            value={newTodo}
+          />
+        </div>
+        <Button className={styles["add-todo-btn"]} type="submit">
+          <PlusIcon className={styles["add-todo-icon"]} />
+        </Button>
       </div>
-      <Button className={styles["add-todo-btn"]} type="submit">
-        <PlusIcon className={styles["add-todo-icon"]} />
-      </Button>
     </form>
   );
 };

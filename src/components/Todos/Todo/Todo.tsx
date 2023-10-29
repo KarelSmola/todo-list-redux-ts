@@ -1,10 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { removeTodo, editTodo } from "../../store/todo/todoSlice";
-import { DateType } from "../../types/type";
+import { removeTodo, editTodo } from "../../../store/todo/todoSlice";
+import { DateType } from "../../../types/type";
 
-import { Button } from "../UI/Button/Button";
-import { EditIcon, RemoveIcon } from "../UI/Icons";
+import { Button } from "../../UI/Button/Button";
+import { EditIcon, RemoveIcon } from "../../UI/Icons";
 import styles from "./Todo.module.css";
 import { TodoDate } from "./TodoDate";
 

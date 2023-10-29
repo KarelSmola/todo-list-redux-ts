@@ -1,0 +1,94 @@
+.edit-todo {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 4rem;
+  background-color: var(--color-brightest);
+  border: var(--border-primary);
+  transition: all 1s ease-out;
+}
+
+.edit-todo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5);
+  backdrop-filter: blur(1rem);
+}
+
+.backdrop:hover {
+  cursor: pointer;
+}
+
+.edit-form {
+  display: flex;
+  gap: 2rem;
+}
+
+.label-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.invalid {
+  background-color: var(--color-invalid-input);
+  border: 1px solid var(--color-primary-attention);
+}
+
+.save-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-brightest);
+  border: var(--border-primary);
+  color: var(--color-primary);
+}
+
+.save-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-brightest);
+}
+
+.save-btn:focus {
+  outline: none;
+  background-color: var(--color-primary);
+  color: var(--color-brightest);
+}
+
+.cancel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: var(--color-brightest);
+  border: var(--border-primary-attention);
+  color: var(--color-primary-attention);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.cancel-btn:hover {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}

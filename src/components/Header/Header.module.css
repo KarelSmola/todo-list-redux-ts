@@ -5,7 +5,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background-color: rgb(91, 91, 244);
+  background-color: rgb(130, 130, 249);
+  border: 2px solid var(--color-primary);
+}
+
+.neutral {
+  background-color: rgb(249, 205, 122);
+  border: 2px solid orange;
+}
+
+.attention {
+  background-color: rgb(247, 116, 116);
+  border: 2px solid var(--color-primary-attention);
 }
 
 .user-box {
@@ -27,6 +38,18 @@
   display: flex;
   gap: 1rem;
   padding: 0.5rem 1rem;
-  background-color: red;
-  color: #fff;
+  background-color: var(--color-brightest);
+  color: var(--color-primary-attention);
+  border: var(--border-primary-attention);
+}
+
+.logout-btn:hover {
+  background-color: var(--color-primary-attention);
+  color: var(--color-brightest);
+}
+
+.logout-btn:focus {
+  outline: none;
+  background-color: var(--color-primary-attention);
+  color: var(--color-brightest);
 }

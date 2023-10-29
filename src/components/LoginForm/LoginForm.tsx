@@ -93,7 +93,7 @@ export const LoginForm = () => {
           value={userPass}
         />
       </div>
-      <Button className={styles["login-btn"]} type="submit">
+      <Button className={`${styles["login-btn"]}`} type="submit">
         <span>Login</span>
         <LoginIcon />
       </Button>

@@ -11,5 +11,5 @@
 
 .input:focus {
   outline: none;
-  border: 1px solid blue;
+  border: var(--border-primary);
 }

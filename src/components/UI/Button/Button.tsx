@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 
 type ButtonProps = {
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   type?: "button" | "submit";
   onClick?: () => void;
 };

@@ -54,6 +54,9 @@ export const todoSlice = createSlice({
       state.editForm = false;
       state.editTodo = {};
     },
+    removeAllTodos(state) {
+      state.todos = [];
+    },
   },
 });
 
@@ -63,4 +66,5 @@ export const {
   editTodo,
   saveEditTodo,
   cancelEditForm,
+  removeAllTodos,
 } = todoSlice.actions;

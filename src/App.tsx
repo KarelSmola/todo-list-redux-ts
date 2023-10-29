@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import { Wrapper } from "./components/UI/Wrapper/Wrapper";
 import { LoginForm } from "./components/LoginForm/LoginForm";
 import { Header } from "./components/Header/Header";
-import { TodoForm } from "./components/TodoForm/TodoForm";
-import { TodoList } from "./components/TodoList/TodoList";
+import { TodoForm } from "./components/Todos/TodoForm/TodoForm";
+import { TodoList } from "./components/Todos/TodoList/TodoList";
 import { selectedUserLogin } from "./store/login/selectors";
-import { EditTodo } from "./components/EditTodo/EditTodo";
+import { EditTodo } from "./components/Todos/EditTodo/EditTodo";
 import { selectedEditForm } from "./store/todo/todoSelectors";
 
 const App = () => {
